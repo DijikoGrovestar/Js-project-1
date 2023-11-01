@@ -1,0 +1,137 @@
+body{
+    background-color: #FFFFFF;
+    margin:0 auto;
+    width:100%;
+    /* overflow: hidden; */
+   
+   }
+
+  .form-fields:after {
+    content: "";
+    display: table;
+    clear: both;
+    /* border-bottom:0px solid #878586;
+    border-right:none; */
+  }
+
+  .form-fields label{
+  padding-left:34px;
+  }
+
+  .label-field {
+    float: left;
+    width: 15%;
+    margin-top: 20px;
+  }
+  
+  .text-field{
+    float: left;
+    width: 15%;
+    margin-top: 20px;
+    /* color:red; */
+    /* border-bottom:0px solid #878586;
+    border-right:none; */
+  }
+
+.text-field select{
+  float: left;
+  width:75%;
+  border: 1px solid #ccc;
+  color:black;
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-width: medium;
+}
+
+  
+input[type=text] {
+    border: 1px solid #ccc;
+    color:black;
+    border-top:1px solid black;
+    border-left:1px solid black;
+    border-width: medium;
+  }
+
+.radio-buttons {
+  padding-left:8em;
+  /* margin-left:5em; */
+}
+
+.radio-buttons label{
+  padding-left:0px;
+}
+
+
+
+  
+
+.opt-info h3{
+    padding-left:30px;
+
+}
+
+.opt-info p{
+    padding-left:30px;
+}
+
+.about-organization{
+    padding-left:30px;  
+    
+}
+
+
+
+.aboutorg-textfield{
+    padding-left:30px;
+   
+}
+/* 
+.aboutorg-textfield input[type=text]{
+  overflow:scroll;
+} */
+
+.aboutorg-textfield input{
+    padding:30px;
+   
+ 
+}
+
+.enquiry{
+  padding-left:30px;
+}
+
+.enquiry-textfield{
+  padding-left:30px;
+}
+
+.enquiry-textfield input{
+  padding:30px;
+}
+
+.buttons{
+padding-left:30px;
+padding-top:10px;
+
+}
+
+.buttons input{
+  background-color: #D4D0C8;
+  border-left:none;
+  border-top:none;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+  .text-field:after{
+    content:"*";
+    color:red;
+
+  } */

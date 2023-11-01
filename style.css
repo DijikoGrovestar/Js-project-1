@@ -1,0 +1,173 @@
+/* careers.html page*/
+body{
+    background-color: #FFFFFF;
+    margin:0 auto;
+    width:100%;
+    overflow: hidden;
+   
+}
+
+.main-head{
+    margin:auto;
+    background-color: #3399CC;
+    padding:8px;
+}
+
+.main-head-content ul {
+    list-style-type:none;
+    font-size: 34px;
+    color:#FFFFFF;
+    padding-left:20px;
+}
+
+.nav-bar{
+    margin:0px;
+    background-color: #333333;
+   
+}
+
+
+.list-items ul{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    display:flex;
+    color:#FFFFFF;
+    /* padding-right:20px;
+    padding-left:30px; */
+
+
+
+    
+}
+
+.list-items ul li:hover{
+    background-color: #FF9900;
+    color:black;
+    border-left:4px solid #FFFFFF;
+
+    }
+
+    .list-items a:hover{
+        color:black;
+     
+    }
+
+.list-items li {
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    
+  
+    }
+
+ .list-items a {
+        color:#FFFFFF;
+        text-decoration: none;
+        padding-right:20px;
+        padding-left:30px;
+    } 
+
+.logo-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.logo-section .logo img{
+    width: 25px;
+    margin: 0 61em;
+    padding-top:2px;
+}
+
+.content-head{
+    display:flex;
+    justify-content: space-between;
+}
+
+.content-head li{
+    list-style-type:none;
+    font-size:25px;
+}
+
+.heading-objective p{
+    padding-left:2.7em;
+    line-height:0px;
+}
+
+.form-fields form{
+    padding:3em;
+    }
+
+input[type=text] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  color:black;
+
+}
+
+ .name-field label {
+        padding-right: 8em;
+  }
+
+.email-field label{
+padding-right:8em;
+}
+
+.desiredrole-field label{
+padding-right:5.1em;
+}
+
+.uploadresume-field label{
+    padding-right:4.2em;
+ 
+}
+
+.uploadresume-field{
+    display:inline-flex;
+    justify-content:space-between;
+}
+
+.browse{
+padding-left:20px;
+/* padding-top:25px; */
+
+/* padding: 12px; */
+/* border: 1px solid #ccc; */
+margin-top: 6px;
+margin-bottom: 16px;
+color:black;
+
+}
+
+.browse button{
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-right:3em;
+}
+.browse input{
+       background-color: #EEEEEE;
+}
+
+input[type=submit] {
+    background-color: #EEEEEE;
+    color:black;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+
+  .submit{
+    padding-left:10.5em;
+    /* margin-right:10em; */
+  }
+
+
+
+
