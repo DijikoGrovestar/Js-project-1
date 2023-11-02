@@ -36,10 +36,10 @@
         </div>
     </div>
 
-    <div class="content">
+    <!-- <div class="content"> -->
         <div class="content-head">
             <ul>
-                <li>Careers at Health On Us</li>
+                <li>Careers at HealthOnUs</li>
             </ul>
         </div>
 
@@ -52,43 +52,45 @@
             <div class="form-fields">
                 <form>
                     <div class="name-field">
-                        <label>Name</label>
+                        <label><b>Name</b></label>
                         <input type="text" id="name" name="name" >
                     </div>
                     
-                  <div class="email-field">
-                    <label>Email</label>
-                    <input type="text" id="email" name="email" >
-                  </div>
+                    <div class="email-field">
+                        <label><b>Email</b></label>
+                        <input type="text" id="email" name="email" >
+                    </div>
                 
-                <div class="desiredrole-field">
-                    <label>Desired Role</label>
-                    <input type="text" id="role" name="role" >
-                </div>
+                    <div class="desiredrole-field">
+                        <label><b>Desired Role</b></label>
+                        <input type="text" id="role" name="role" >
+                    </div>
                    
-                <div class="uploadresume-field">
-                    <label>Upload Resume</label>
-                    <input type="text" id="resume" name="resume" >
+                    <div class="uploadresume-field">
+                        <div class="uploadresume-label">
+                            <label><b>Upload Resume</b></label>
+                        <input type="text" id="resume" name="resume" >
+
+                        <div class="submit">
+                            <button type="submit" class="sub-btn"  onclick="myFunction()"><b>Submit</b></button>
+                        </div>
+                    </div>
+
                     <div class="browse">
-                        <button type="button" onclick="myFunction()">Browse..</button>
+                        <input type="button" id="btnFileUpload" value="Browse.." />
+                        <span id="spnFilePath"></span>
+                        <input type="file" id="FileUpload1" style="display: none" />
                     </div>
                  
-                </div>
-                <div class="submit">
-                    <input type="submit" value="Submit">
-                  </div>
+                    
                     
                 </form>
                   
-              
             </div>
-         
+         </div>
             
 
-        </div>
-    </div>
-
-<script src="careers.js"></script>
+    <script src="careers.js"></script>
 
 
 </body>

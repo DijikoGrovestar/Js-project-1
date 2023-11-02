@@ -5,13 +5,104 @@ body{
     /* overflow: hidden; */
    
    }
+   .main-head{
+    margin:auto;
+    background-color: #3399CC;
+    padding:8px;
+}
+
+.main-head-content ul {
+    list-style-type:none;
+    font-size: 34px;
+    color:#FFFFFF;
+    padding-left:20px;
+}
+
+.nav-bar{
+    margin:0px;
+    background-color: #333333;
+   
+}
+
+
+.list-items ul{
+  margin:0px;
+  padding:0px; 
+  list-style-type:none;
+  display:flex;
+  color:#FFFFFF;
+  /* padding-right:20px;
+  padding-left:30px; */
+
+
+
+  
+}
+
+.list-items ul li:hover{
+  background-color: #FF9900;
+  color:black;
+  border-left:4px solid #FFFFFF;
+
+  }
+
+  .list-items a:hover{
+      color:black;
+   
+  }
+
+.list-items li {
+  
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  }
+
+.list-items a {
+      color:#FFFFFF;
+      text-decoration: none;
+      padding-right:20px;
+      padding-left:30px;
+  } 
+
+.logo-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.logo-section .logo img{
+  width: 25px;
+  margin: 0 61em;
+  padding-top:2px;
+}
+
+.required:after{
+  content:"*";
+  color:red;
+  /* position:absolute; */
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 12px;
+}
+
+
+
+
+
+
 
   .form-fields:after {
     content: "";
     display: table;
     clear: both;
-    /* border-bottom:0px solid #878586;
-    border-right:none; */
+   
   }
 
   .form-fields label{
@@ -26,8 +117,11 @@ body{
   
   .text-field{
     float: left;
-    width: 15%;
+    /* width: 15%; */
     margin-top: 20px;
+
+  
+
     /* color:red; */
     /* border-bottom:0px solid #878586;
     border-right:none; */
@@ -61,6 +155,13 @@ input[type=text] {
   padding-left:0px;
 }
 
+
+.buttons{
+  padding-left:5em;
+}
+.buttons label{
+  padding-left:0px;
+}
 
 
   

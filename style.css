@@ -3,7 +3,7 @@ body{
     background-color: #FFFFFF;
     margin:0 auto;
     width:100%;
-    overflow: hidden;
+    /* overflow: hidden; */
    
 }
 
@@ -33,24 +33,17 @@ body{
     list-style-type:none;
     display:flex;
     color:#FFFFFF;
-    /* padding-right:20px;
-    padding-left:30px; */
-
-
-
-    
+   
 }
 
 .list-items ul li:hover{
     background-color: #FF9900;
     color:black;
     border-left:4px solid #FFFFFF;
-
     }
 
     .list-items a:hover{
         color:black;
-     
     }
 
 .list-items li {
@@ -59,8 +52,7 @@ body{
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    
-  
+     
     }
 
  .list-items a {
@@ -136,23 +128,24 @@ padding-right:5.1em;
 
 .browse{
 padding-left:20px;
-/* padding-top:25px; */
-
-/* padding: 12px; */
-/* border: 1px solid #ccc; */
 margin-top: 6px;
 margin-bottom: 16px;
 color:black;
-
 }
 
-.browse button{
+.browse input{
     padding-bottom:10px;
     padding-top:10px;
-    padding-right:3em;
+    padding-right:4em;
+    padding-left:25px;
+    border: 1px solid #ccc;
+    color:black;
 }
+
+
 .browse input{
        background-color: #EEEEEE;
+       font-weight:bold;
 }
 
 input[type=submit] {
@@ -163,10 +156,21 @@ input[type=submit] {
     cursor: pointer;
   }
 
-  .submit{
+.submit{
     padding-left:10.5em;
-    /* margin-right:10em; */
+    
+
   }
+
+  .submit button{
+    border: 1px solid #ccc;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:5em;
+    padding-left:15px;
+  }
+
+
 
 
 
