@@ -2,6 +2,9 @@ body{
     background-color: #FFFFFF;
     margin:0 auto;
     width:100%;
+    overflow-x: hidden;
+    
+
     /* overflow: hidden; */
    
    }
@@ -31,25 +34,27 @@ body{
   list-style-type:none;
   display:flex;
   color:#FFFFFF;
-  /* padding-right:20px;
-  padding-left:30px; */
+ 
+ }
 
-
-
-  
+ .list-items a.nav-listitem:hover, .active{
+  color:black;
+  background-color: #FF9900;
+  border-left:4px solid #FFFFFF;
+  padding:8px;
 }
 
 .list-items ul li:hover{
   background-color: #FF9900;
   color:black;
   border-left:4px solid #FFFFFF;
-
+  padding:8px;
   }
 
   .list-items a:hover{
       color:black;
-   
-  }
+    
+     }
 
 .list-items li {
   
@@ -83,19 +88,22 @@ body{
 .required:after{
   content:"*";
   color:red;
-  /* position:absolute; */
+  /* position:absolute;  */
 }
 
-.error-message {
+.req-msg{
   display: none;
   color: red;
   font-size: 12px;
-}
+  }
 
 
-
-
-
+ .error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-left:34px;
+} 
 
 
   .form-fields:after {
@@ -119,23 +127,21 @@ body{
     float: left;
     /* width: 15%; */
     margin-top: 20px;
-
-  
-
-    /* color:red; */
-    /* border-bottom:0px solid #878586;
-    border-right:none; */
+ 
   }
 
 .text-field select{
   float: left;
-  width:75%;
+  width:100%;
   border: 1px solid #ccc;
   color:black;
   border-top:1px solid black;
   border-left:1px solid black;
   border-width: medium;
+  margin-right:22px;
 }
+
+
 
   
 input[type=text] {
@@ -146,25 +152,7 @@ input[type=text] {
     border-width: medium;
   }
 
-.radio-buttons {
-  padding-left:8em;
-  /* margin-left:5em; */
-}
 
-.radio-buttons label{
-  padding-left:0px;
-}
-
-
-.buttons{
-  padding-left:5em;
-}
-.buttons label{
-  padding-left:0px;
-}
-
-
-  
 
 .opt-info h3{
     padding-left:30px;
@@ -180,29 +168,35 @@ input[type=text] {
     
 }
 
-
-
 .aboutorg-textfield{
     padding-left:30px;
-   
+     
 }
-/* 
-.aboutorg-textfield input[type=text]{
+
+.aboutorg-textfield textarea{
   overflow:scroll;
-} */
+  overflow-x:hidden;
+  border-top:3px solid black;
+  border-left:3px solid black;
+}
 
 .aboutorg-textfield input{
     padding:30px;
-   
- 
-}
+   }
 
 .enquiry{
-  padding-left:30px;
+  padding-left:30px; 
 }
 
 .enquiry-textfield{
   padding-left:30px;
+}
+
+.enquiry-textfield textarea{
+  overflow:scroll;
+  overflow-x:hidden;
+  border-top:3px solid black;
+  border-left:3px solid black;
 }
 
 .enquiry-textfield input{
@@ -212,7 +206,6 @@ input[type=text] {
 .buttons{
 padding-left:30px;
 padding-top:10px;
-
 }
 
 .buttons input{
@@ -230,9 +223,3 @@ padding-top:10px;
 
 
 
-/* 
-  .text-field:after{
-    content:"*";
-    color:red;
-
-  } */
