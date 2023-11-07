@@ -4,8 +4,7 @@ body{
     margin:0 auto;
     width:100%;
     overflow: hidden;
-   
-}
+   }
 
 .main-head{
     margin:auto;
@@ -23,9 +22,7 @@ body{
 .nav-bar{
     margin:0px;
     background-color: #333333;
-   
-}
-
+   }
 
 .list-items ul{
     margin:0px;
@@ -33,10 +30,7 @@ body{
     list-style-type:none;
     display:flex;
     color:#FFFFFF;
-   
 }
-
-
 
 .list-items a.nav-listitem:hover, .active{
     color:black;
@@ -57,12 +51,10 @@ body{
     }
 
 .list-items li {
-    
     display:flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-     
     }
 
  .list-items a {
@@ -128,7 +120,6 @@ padding-right:5.1em;
 
 .uploadresume-field label{
     padding-right:3.8em;
- 
 }
 
 .uploadresume-field{
@@ -152,7 +143,6 @@ color:black;
     color:black;
 }
 
-
 .browse input{
        background-color: #EEEEEE;
        font-weight:bold;
@@ -169,8 +159,6 @@ input[type=submit] {
 
 .submit{
     padding-left:10.5em;
-    
-
   }
 
   .submit button{

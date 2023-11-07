@@ -1,7 +1,3 @@
-// function myFunction() {
-//     document.getElementById("demo").innerHTML = "Paragraph changed.";
-//   }
-
 //Browse to upload a file
 window.onload = function () {
     var fileupload = document.getElementById("FileUpload1");
@@ -15,9 +11,6 @@ window.onload = function () {
         filePath.innerHTML = "<b>Selected File: </b>" + fileName;
     };
 };
-
-
-
 
 //submit successfully
 function myFunction() {
