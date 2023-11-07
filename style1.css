@@ -3,12 +3,9 @@ body{
     margin:0 auto;
     width:100%;
     overflow-x: hidden;
-    
+      }
 
-    /* overflow: hidden; */
-   
-   }
-   .main-head{
+.main-head{
     margin:auto;
     background-color: #3399CC;
     padding:8px;
@@ -27,15 +24,12 @@ body{
    
 }
 
-
-
 .list-items ul{
   margin:0px;
   padding:0px; 
   list-style-type:none;
   display:flex;
   color:#FFFFFF;
- 
  }
 
  .list-items a.nav-listitem:hover, .active{
@@ -49,16 +43,13 @@ body{
   background-color: #FF9900;
   color:black;
   border-left:4px solid #FFFFFF;
-  
   }
 
   .list-items a:hover{
       color:black;
-    
      }
 
 .list-items li {
-  
   display:flex;
   justify-content: space-between;
   align-items: center;
@@ -89,15 +80,13 @@ body{
 .required:after{
   content:"*";
   color:red;
-  /* position:absolute;  */
-}
+  }
 
 .req-msg{
   display: none;
   color: red;
   font-size: 12px;
   }
-
 
  .error-message {
   color: red;
@@ -106,13 +95,11 @@ body{
   padding-left:34px;
 } 
 
-
   .form-fields:after {
     content: "";
     display: table;
     clear: both;
-   
-  }
+     }
 
   .form-fields label{
   padding-left:34px;
@@ -126,10 +113,8 @@ body{
   
   .text-field{
     float: left;
-    /* width: 15%; */
     margin-top: 20px;
- 
-  }
+   }
 
 .text-field select{
   float: left;
@@ -141,9 +126,6 @@ body{
   border-width: medium;
   margin-right:22px;
 }
-
-
-
   
 input[type=text] {
     border: 1px solid #ccc;
@@ -153,11 +135,8 @@ input[type=text] {
     border-width: medium;
   }
 
-
-
 .opt-info h3{
     padding-left:30px;
-
 }
 
 .opt-info p{

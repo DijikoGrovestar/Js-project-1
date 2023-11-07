@@ -14,8 +14,6 @@ function femaleradiobutton(){
     alert("Hello Lady");
 }
 
-
-
 //text-field required message
 function namefield() {
     var nameInput = document.getElementById('name');
@@ -132,8 +130,7 @@ function namefield() {
 
 
   //state-dropdown
-  
-  function updatePromoCode() {
+    function updatePromoCode() {
     var stateSelect = document.getElementById('state');
     var promoCodeInput = document.getElementById('promo-code');
     
@@ -146,10 +143,7 @@ function namefield() {
 
 
   //Form validation
-  function validateForm() {
-    // debugger;
-    // event.preventDefault(); //    form submission
-  
+  function validateForm() {  
     var nameInput = document.getElementById('name');
     var emailInput = document.getElementById('email');
     var telephonenumber = document.getElementById('telephonenumber');
@@ -162,18 +156,15 @@ function namefield() {
     if (nameInput.value === '' || emailInput.value === '' || Organization.value === ''  ) {
            errorMessage.textContent = 'Please fill all the required fields below.';
         } else {
-           // Form is valid, you can proceed with form submission or further processing
+       // Form is valid, you can proceed with form submission or further processing
       errorMessage.textContent = '';
       alert("sent successfully");
       // Submit the form or perform other actions
         document.getElementById('myForm').submit();
-      
-    
-}
+      }
   }
 
-
-// Add event listeners to the text fields
+// Added event listeners to the text fields
 document.getElementById('name').addEventListener('input', clearErrorMessage);
 document.getElementById('email').addEventListener('input', clearErrorMessage);
 document.getElementById('telephonenumber').addEventListener('input', clearErrorMessage);
