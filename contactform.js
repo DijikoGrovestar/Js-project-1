@@ -22,7 +22,7 @@ function namefield() {
   if (nameInput.value === "") {
     nameInput.classList.add("invalid");
     nameError.classList.remove("hidden");
-  } else {
+    } else {
     nameInput.classList.remove("invalid");
     nameError.classList.add("hidden");
   }
@@ -35,6 +35,7 @@ function emailfield() {
   if (nameInput.value === "") {
     nameInput.classList.add("invalid");
     nameError.classList.remove("hidden");
+   
   } else {
     nameInput.classList.remove("invalid");
     nameError.classList.add("hidden");
@@ -48,6 +49,7 @@ function telephonefield() {
   if (nameInput.value === "") {
     nameInput.classList.add("invalid");
     nameError.classList.remove("hidden");
+  
   } else {
     nameInput.classList.remove("invalid");
     nameError.classList.add("hidden");
@@ -74,6 +76,7 @@ function cityfield() {
   if (nameInput.value === "") {
     nameInput.classList.add("invalid");
     nameError.classList.remove("hidden");
+  
   } else {
     nameInput.classList.remove("invalid");
     nameError.classList.add("hidden");
@@ -119,6 +122,9 @@ function enquiryfield() {
   }
 }
 
+
+
+
 //state-dropdown
 function updatePromoCode() {
   var stateSelect = document.getElementById("state");
@@ -156,6 +162,7 @@ function validateForm() {
     document.getElementById("myForm").submit();
   }
 }
+
 
 // function showAlert(radioButton) {
 //   if (radioButton.checked) {
