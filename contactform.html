@@ -2,177 +2,179 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
 </head>
-<body>
-    <div class="main-head">
-        <div class="main-head-content">
-            <ul>
-                <li>
-                 HEALTH ON US
-                </li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="nav-bar">
-        <div class="list-items">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="careers.html">CAREERS</a></li>
-                <li><a class="nav-listitem active"  href="#">CONTACT</a></li>
-                <div class="logo-section">
-                    <div class="logo">
-                      <img src="assets\blog-icon.png"> 
-                    </div>
-                </div> 
-            </ul> 
-        </div>
+<body>
+  <div class="main-head">
+    <div class="main-head-content">
+      <ul>
+        <li>
+          HEALTH ON US
+        </li>
+      </ul>
     </div>
+  </div>
+
+  <div class="nav-bar">
+    <div class="list-items">
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="careers.html">CAREERS</a></li>
+        <li><a class="nav-listitem active" href="#">CONTACT</a></li>
+        <div class="logo-section">
+          <div class="logo">
+            <img src="assets\blog-icon.png">
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
 
   <form id="myForm">
-      <div id="error-message" class="error-message"></div>
-        <div class="form-fields">
-            <div class="label-field">
-               <label for="name">My Name:</label>
-            </div>
-            <div class="text-field required">
-              <input type="text" onclick="namefield()" id="name" name="name">
-              <span id="name-error" class="req-msg">Name is required</span>
-            </div>
-        </div>
 
-        <div class="form-fields">
-            <div class="label-field">
-              <label for="email">My Email Address:</label>
-            </div>
-            <div class="text-field required">
-              <input type="text" onclick="emailfield()" id="email" name="email">
-              <span id="email-error" class="req-msg">Email is required</span>
-            </div>
-        </div>
+    <div id="error-message" class="error-message"></div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label for="name">My Name:</label>
+      </div>
+      <div class="text-field required">
+        <input type="text" onfocus="namefield(this)" id="name" name="name">
+        <span id="name-error" class="req-msg hidden">Name is required</span>
+      </div>
+    </div>
 
-        <div class="form-fields">
-            <div class="label-field">
-              <label for="telephonenumber">My Telephone Number:</label>
-            </div>
-            <div class="text-field ">
-              <input type="text" onclick="telephonefield()" id="telephonenumber" name="telephonenumber">
-              <span id="telephone-error" class="req-msg">Telephone Number is required</span>
-            </div>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label for="email">My Email Address:</label>
+      </div>
+      <div class="text-field required">
+        <input type="text" onfocus="emailfield(this)" id="email" name="email">
+        <span id="email-error" class="req-msg hidden">Email is required</span>
+      </div>
+    </div>
 
-        <div class="form-fields">
-            <div class="label-field">
-              <label for="Organization">My Organization Name:</label>
-            </div>
-            <div class="text-field required">
-              <input type="text" onclick="organizationfield()" id="Organization" name="Organization">
-              <span id="organization-error" class="req-msg">Organization is required</span>
-            </div>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label for="telephonenumber">My Telephone Number:</label>
+      </div>
+      <div class="text-field ">
+        <input type="text" onfocus="telephonefield(this)" id="telephonenumber" name="telephonenumber">
+        <span id="telephone-error" class="req-msg hidden">Telephone Number is required</span>
+      </div>
+    </div>
 
-        <div class="form-fields">
-            <div class="label-field">
-              <label for="city">My City:</label>
-            </div>
-            <div class="text-field">
-              <input type="text" onclick="cityfield()" id="city" name="city">
-              <span id="city-error" class="req-msg">City is required</span>
-            </div>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label for="Organization">My Organization Name:</label>
+      </div>
+      <div class="text-field required">
+        <input type="text" onfocus="organizationfield(this)" id="Organization" name="Organization">
+        <span id="organization-error" class="req-msg hidden">Organization is required</span>
+      </div>
+    </div>
 
-        <div class="form-fields">
-            <div class="label-field">
-              <label >My State or Province:</label>
-            </div>
-            <div class="text-field">
-              <select id="state" name="state" onchange="updatePromoCode()">
-                <option value="">My State or Province</option>
-                <option value="Andhra Pradesh">Andhra Pradesh</option>
-                <option value="Telangana">Telangana</option>
-                <option value="Karnataka">Karnataka</option>
-                <option value="Tamil Nadu">Tamil Nadu</option>
-              </select>
-            </div>
-        </div>
-         
-        <div class="form-fields">
-            <div class="label-field">
-              <label>Please Contact Me By:</label>
-            </div>  
-            <div class="text-field">
-              <input type="radio" id="email" name="fav_language" value="email">
-              <label>Email</label><br>
-              <input type="radio" id="phone" name="fav_language" value="phone">
-              <label>Phone</label><br>
-              <input type="radio" id=" both" name="fav_language" value="JavaScript"> <label for="both">Both</label>
-            </div>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label for="city">My City:</label>
+      </div>
+      <div class="text-field">
+        <input type="text" onfocus="cityfield(this)" id="city" name="city">
+        <span id="city-error" class="req-msg hidden">City is required</span>
+      </div>
+    </div>
 
-        <div class="form-fields">
-            <div class="label-field">
-                <label>Gender:</label>
-            </div>
-            <div class="text-field"> 
-                <input type="radio" id="male" onchange="maleradiobutton()" name="gender"  value="Male">
-                <label for="male">Male</label>
-                <br>
-                <input type="radio" id="female"onchange="femaleradiobutton  ()" name="gender"  value="Female">
-                <label for="female">Female</label> 
-            </div>
-        </div>
-        
-        <div class="form-fields">
-          <div class="label-field">
-            <label for="promo-code">Promotion Code:</label>
-          </div>
-          <div class="text-field">
-            <input type="text" id="promo-code" name="promo-code" readonly>
-          </div>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label>My State or Province:</label>
+      </div>
+      <div class="text-field">
+        <select id="state" name="state" onchange="updatePromoCode()">
+          <option value="">My State or Province</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+        </select>
+      </div>
+    </div>
 
-        <div class="opt-info">
-            <h3>Optional Information</h3>
-            <p>This information is optional but it help us to serve you better.</p>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label>Please Contact Me By:</label>
+      </div>
+      <div class="text-field">
+        <input type="radio" id="email" name="fav_language" value="email">
+        <label>Email</label><br>
+        <input type="radio" id="phone" name="fav_language" value="phone">
+        <label>Phone</label><br>
+        <input type="radio" id=" both" name="fav_language" value="JavaScript"> <label for="both">Both</label>
+      </div>
+    </div>
 
-        <div class="form-fields">
-            <div class="label-field">
-              <label for="webaddress">My Website Address is:</label>
-            </div>
-            <div class="text-field">
-              <input type="text"  onclick="webaddressfield()" id="webaddress" name="webaddress">
-              <span id="webaddress-error"  class="req-msg">Website Address is required </span>
-            </div>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label>Gender:</label>
+      </div>
+      <div class="text-field">
+        <input type="radio" id="male" onchange="maleradiobutton()" name="gender" value="Male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" onchange="femaleradiobutton  ()" name="gender" value="Female">
+        <label for="female">Female</label>
+      </div>
+    </div>
 
-        <div class="about-organization">
-            <p >Tell Us More About Your Organization:</p>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label for="promo-code">Promotion Code:</label>
+      </div>
+      <div class="text-field">
+        <input type="text" id="promo-code" name="promo-code" readonly>
+      </div>
+    </div>
 
-        <div class="aboutorg-textfield">
-          <textarea onclick="feedbackfield()" id="feedback" name="feedback"  rows="6" cols="47"></textarea>
-          <span id="feedback-error"  class="req-msg">This field is required </span>
-        </div>
+    <div class="opt-info">
+      <h3>Optional Information</h3>
+      <p>This information is optional but it help us to serve you better.</p>
+    </div>
 
-        <div class="enquiry">
-            <p>What I'd really like to know is:</p>
-        </div>
+    <div class="form-fields">
+      <div class="label-field">
+        <label for="webaddress">My Website Address is:</label>
+      </div>
+      <div class="text-field">
+        <input type="text" onfocus="webaddressfield(this)" id="webaddress" name="webaddress">
+        <span id="webaddress-error" class="req-msg hidden">Website Address is required </span>
+      </div>
+    </div>
 
-        <div class="enquiry-textfield">
-            <textarea onclick="enquiryfield()" id="enquiry" name="enquiry" rows="6" cols="47"></textarea>
-            <span id="enquiry-error"  class="req-msg">This field is required </span>
-        </div>
+    <div class="about-organization">
+      <p>Tell Us More About Your Organization:</p>
+    </div>
 
-        <div class="buttons">
-          <input type="button" onclick="validateForm()" value="Send message">
-          <input type="submit" onclick="clearForm()" value="Clear Form">
-        </div>
+    <div class="aboutorg-textfield">
+      <textarea onclick="feedbackfield(this)" id="feedback" name="feedback" rows="6" cols="47"></textarea>
+      <span id="feedback-error" class="req-msg hidden">This field is required </span>
+    </div>
+
+    <div class="enquiry">
+      <p>What I'd really like to know is:</p>
+    </div>
+
+    <div class="enquiry-textfield">
+      <textarea onfocus="enquiryfield(this)" id="enquiry" name="enquiry" rows="6" cols="47"></textarea>
+      <span id="enquiry-error" class="req-msg hidden">This field is required </span>
+    </div>
+
+    <div class="buttons">
+      <input type="button" onclick="validateForm()" value="Send message">
+      <input type="submit" onclick="clearForm()" value="Clear Form">
+    </div>
+
   </form>
-  
-<script src="contactform.js"></script>
+  <script src="contactform.js"></script>
 </body>
