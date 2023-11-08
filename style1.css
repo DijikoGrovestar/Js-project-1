@@ -31,36 +31,46 @@ body {
   color: #ffffff;
 }
 
-.list-items a.nav-listitem:hover,
-.active {
-  color: black;
+.list-items a.nav-listitem:hover {
+  color: #333333;
   background-color: #ff9900;
+  cursor: pointer;
   border-left: 4px solid #ffffff;
-  padding: 8px;
+  padding: 8px 10px;
+}
+
+.list-items a.active { 
+  color: #333333;
+  background-color: #ff9900;
+  cursor: pointer;
+  border-left: 4px solid #ffffff;
+  padding: 8px 10px;
+}
+
+
+.list-items ul li {
+  background-color: #333333; /* Set a fixed background color */
+  color: #ffffff;
+  cursor: pointer;
+  border-left: 4px solid transparent; /* Maintain a constant border width */
+  padding: 8px 10px; /* Set fixed padding for top/bottom and left/right */
+  justify-content: space-between;
 }
 
 .list-items ul li:hover {
   background-color: #ff9900;
-  color: black;
+  color: #333333;
+  cursor: pointer;
   border-left: 4px solid #ffffff;
-}
-
-.list-items a:hover {
-  color: black;
-}
-
-.list-items li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
 }
 
 .list-items a {
   color: #ffffff;
   text-decoration: none;
-  padding-right: 20px;
-  padding-left: 30px;
+}
+
+.list-items a:hover {
+  color: black;
 }
 
 .logo-section {
@@ -115,7 +125,6 @@ body {
 .text-field {
   float: left;
   margin-top: 20px;
-
 }
 
 .text-field select {
@@ -194,14 +203,12 @@ input[type="text"] {
   border-top: none;
 }
 
-
-
-.req-msg{
+.req-msg {
   display: inline;
   color: red;
   font-size: 12px;
 }
 
-.hidden{
-  display:none;
+.hidden {
+  display: none;
 }

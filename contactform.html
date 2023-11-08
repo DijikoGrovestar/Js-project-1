@@ -42,7 +42,7 @@
         <label for="name">My Name:</label>
       </div>
       <div class="text-field required">
-        <input type="text" onfocus="namefield(this)" id="name" name="name">
+        <input type="text" onfocus="namefield(this)" onblur="clearError(this)" id="name" name="name">
         <span id="name-error" class="req-msg hidden">Name is required</span>
       </div>
     </div>
@@ -52,7 +52,7 @@
         <label for="email">My Email Address:</label>
       </div>
       <div class="text-field required">
-        <input type="text" onfocus="emailfield(this)" id="email" name="email">
+        <input type="text" onfocus="emailfield(this)"   onblur="clearError(this)" id="email" name="email">
         <span id="email-error" class="req-msg hidden">Email is required</span>
       </div>
     </div>
@@ -62,8 +62,8 @@
         <label for="telephonenumber">My Telephone Number:</label>
       </div>
       <div class="text-field ">
-        <input type="text" onfocus="telephonefield(this)" id="telephonenumber" name="telephonenumber">
-        <span id="telephone-error" class="req-msg hidden">Telephone Number is required</span>
+        <input type="text" onfocus="telephonefield(this)" onblur="clearError(this)" id="telephonenumber" name="telephonenumber">
+        <span id="telephone-error" class="req-msg hidden">Please enter telephone number</span>
       </div>
     </div>
 
@@ -72,7 +72,7 @@
         <label for="Organization">My Organization Name:</label>
       </div>
       <div class="text-field required">
-        <input type="text" onfocus="organizationfield(this)" id="Organization" name="Organization">
+        <input type="text" onfocus="organizationfield(this)" onblur="clearError(this)" id="Organization" name="Organization">
         <span id="organization-error" class="req-msg hidden">Organization is required</span>
       </div>
     </div>
@@ -82,8 +82,8 @@
         <label for="city">My City:</label>
       </div>
       <div class="text-field">
-        <input type="text" onfocus="cityfield(this)" id="city" name="city">
-        <span id="city-error" class="req-msg hidden">City is required</span>
+        <input type="text" onfocus="cityfield(this)" onblur="clearError(this)" id="city" name="city">
+        <span id="city-error" class="req-msg hidden">Please enter city</span>
       </div>
     </div>
 
@@ -147,8 +147,8 @@
         <label for="webaddress">My Website Address is:</label>
       </div>
       <div class="text-field">
-        <input type="text" onfocus="webaddressfield(this)" id="webaddress" name="webaddress">
-        <span id="webaddress-error" class="req-msg hidden">Website Address is required </span>
+        <input type="text" onfocus="webaddressfield(this)" onblur="clearError(this)" id="webaddress" name="webaddress">
+        <span id="webaddress-error" class="req-msg hidden">Please enter website address</span>
       </div>
     </div>
 
@@ -157,8 +157,8 @@
     </div>
 
     <div class="aboutorg-textfield">
-      <textarea onclick="feedbackfield(this)" id="feedback" name="feedback" rows="6" cols="47"></textarea>
-      <span id="feedback-error" class="req-msg hidden">This field is required </span>
+      <textarea onclick="feedbackfield(this)" onblur="clearError(this)" id="feedback" name="feedback" rows="6" cols="47"></textarea>
+      <span id="feedback-error" class="req-msg hidden">Please fill this field</span>
     </div>
 
     <div class="enquiry">
@@ -166,8 +166,8 @@
     </div>
 
     <div class="enquiry-textfield">
-      <textarea onfocus="enquiryfield(this)" id="enquiry" name="enquiry" rows="6" cols="47"></textarea>
-      <span id="enquiry-error" class="req-msg hidden">This field is required </span>
+      <textarea onfocus="enquiryfield(this)" onblur="clearError(this)" id="enquiry" name="enquiry" rows="6" cols="47"></textarea>
+      <span id="enquiry-error" class="req-msg hidden">Please fill this field</span>
     </div>
 
     <div class="buttons">

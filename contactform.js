@@ -15,18 +15,24 @@ function femaleradiobutton() {
 }
 
 //text-field required message
-function namefield() {
-  var nameInput = document.getElementById("name");
+function namefield(input) {
   var nameError = document.getElementById("name-error");
-
-  if (nameInput.value === "") {
-    nameInput.classList.add("invalid");
+  if (input.value === "") {
+    input.classList.add("invalid");
     nameError.classList.remove("hidden");
     } else {
-    nameInput.classList.remove("invalid");
-    nameError.classList.add("hidden");
+      input.classList.remove("invalid");
   }
 }
+
+function clearError(input) {
+  var nameError = document.getElementById("name-error");
+  if (input.value !== "") {
+      nameError.classList.add("hidden");
+  }
+}
+
+
 
 function emailfield() {
   var nameInput = document.getElementById("email");
@@ -38,6 +44,15 @@ function emailfield() {
    
   } else {
     nameInput.classList.remove("invalid");
+    nameError.classList.add("hidden");
+  }
+}
+
+function clearError(input) {
+  var nameError = document.getElementById("email-error");
+
+  if (input.value !== "") {
+    input.classList.remove("invalid");
     nameError.classList.add("hidden");
   }
 }
@@ -56,6 +71,15 @@ function telephonefield() {
   }
 }
 
+function clearError(input) {
+  var nameError = document.getElementById("telephone-error");
+
+  if (input.value !== "") {
+    input.classList.remove("invalid");
+    nameError.classList.add("hidden");
+  }
+}
+
 function organizationfield() {
   var nameInput = document.getElementById("Organization");
   var nameError = document.getElementById("organization-error");
@@ -65,6 +89,15 @@ function organizationfield() {
     nameError.classList.remove("hidden");
   } else {
     nameInput.classList.remove("invalid");
+    nameError.classList.add("hidden");
+  }
+}
+
+function clearError(input) {
+  var nameError = document.getElementById("organization-error");
+
+  if (input.value !== "") {
+    input.classList.remove("invalid");
     nameError.classList.add("hidden");
   }
 }
@@ -83,6 +116,16 @@ function cityfield() {
   }
 }
 
+
+function clearError(input) {
+  var nameError = document.getElementById("city-error");
+
+  if (input.value !== "") {
+    input.classList.remove("invalid");
+    nameError.classList.add("hidden");
+  }
+}
+
 function webaddressfield() {
   var nameInput = document.getElementById("webaddress");
   var nameError = document.getElementById("webaddress-error");
@@ -92,6 +135,15 @@ function webaddressfield() {
     nameError.classList.remove("hidden");
   } else {
     nameInput.classList.remove("invalid");
+    nameError.classList.add("hidden");
+  }
+}
+
+function clearError(input) {
+  var nameError = document.getElementById("webaddress-error");
+
+  if (input.value !== "") {
+    input.classList.remove("invalid");
     nameError.classList.add("hidden");
   }
 }
@@ -109,6 +161,15 @@ function feedbackfield() {
   }
 }
 
+function clearError(input) {
+  var nameError = document.getElementById("feedback-error");
+
+  if (input.value !== "") {
+    input.classList.remove("invalid");
+    nameError.classList.add("hidden");
+  }
+}
+
 function enquiryfield() {
   var nameInput = document.getElementById("enquiry");
   var nameError = document.getElementById("enquiry-error");
@@ -118,6 +179,15 @@ function enquiryfield() {
     nameError.classList.remove("hidden");
   } else {
     nameInput.classList.remove("invalid");
+    nameError.classList.add("hidden");
+  }
+}
+
+function clearError(input) {
+  var nameError = document.getElementById("enquiry-error");
+
+  if (input.value !== "") {
+    input.classList.remove("invalid");
     nameError.classList.add("hidden");
   }
 }

@@ -1,177 +1,187 @@
 /* careers.html page*/
-body{
-    background-color: #FFFFFF;
-    margin:0 auto;
-    width:100%;
-    overflow: hidden;
-   }
+body {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+}
 
-.main-head{
-    margin:auto;
-    background-color: #3399CC;
-    padding:8px;
+.main-head {
+  margin: auto;
+  background-color: #3399cc;
+  padding: 8px;
 }
 
 .main-head-content ul {
-    list-style-type:none;
-    font-size: 34px;
-    color:#FFFFFF;
-    padding-left:20px;
+  list-style-type: none;
+  font-size: 34px;
+  color: #ffffff;
+  padding-left: 20px;
 }
 
-.nav-bar{
-    margin:0px;
-    background-color: #333333;
-   }
-
-.list-items ul{
-    margin:0px;
-    padding:0px;
-    list-style-type:none;
-    display:flex;
-    color:#FFFFFF;
+.nav-bar {
+  margin: 0px;
+  background-color: #333333;
 }
 
-.list-items a.nav-listitem:hover, .active{
-    color:black;
-    background-color: #FF9900;
-    border-left:4px solid #FFFFFF;
-    padding:8px;
-  }
+.list-items ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  color: #ffffff;
+}
+
+.list-items a.nav-listitem {
+  color: #333333;
+  background-color: #ff9900;
+  cursor: pointer;
+  border-left: 4px solid #ffffff;
+  padding: 8px 10px;
+}
+
+.list-items a.nav-listitem:hover {
+  color: #333333;
+  background-color: #ff9900;
+  cursor: pointer;
+  border-left: 4px solid #ffffff;
+}
+
+
+.list-items a.active {
+  color: #333333;
+  background-color: #ff9900;
+  cursor: pointer;
+  border-left: 4px solid #ffffff;
+  padding: 8px 10px;
+}
+
+.list-items ul li {
+  background-color: #333333;
+  color: #ffffff;
+  cursor: pointer;
+  border-left: 4px solid transparent; 
+  padding: 8px 10px;
+}
+
 
 .list-items ul li:hover {
-    background-color: #FF9900;
-    color:black;
-    cursor: pointer;
-    border-left:4px solid #FFFFFF;
-    }
-
-    .list-items a:hover{
-        color:black;
-    }
-
-.list-items li {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    }
-
- .list-items a {
-        color:#FFFFFF;
-        text-decoration: none;
-        padding-right:20px;
-        padding-left:30px;
-    } 
-
-.logo-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin-right: 30px;
+  background-color: #ff9900;
+  color: #333333;
+  cursor: pointer;
+  border-left: 4px solid #ffffff;
 }
 
-.logo-section .logo img{
-    width: 25px;
-    margin: 0 61em;
-    padding-top:2px;
+.list-items a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.content-head{
-    display:flex;
-    justify-content: space-between;
+.list-items a:hover {
+  color: black;
 }
 
-.content-head li{
-    list-style-type:none;
-    font-size:25px;
+.logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 30px;
 }
 
-.heading-objective p{
-    padding-left:2.7em;
-    line-height:0px;
+.logo-section .logo img {
+  width: 25px;
+  margin: 0 69em;
+  padding-top: 2px;
 }
 
-.form-fields form{
-    padding:3em;
-    }
+.content-head {
+  display: flex;
+  justify-content: space-between;
+}
 
-input[type=text] {
+.content-head li {
+  list-style-type: none;
+  font-size: 25px;
+}
+
+.heading-objective p {
+  padding-left: 2.7em;
+  line-height: 0px;
+}
+
+.form-fields form {
+  padding: 3em;
+}
+
+input[type="text"] {
   padding: 12px;
   border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
-  color:black;
-
+  color: black;
 }
 
- .name-field label {
-        padding-right: 8em;
-  }
-
-.email-field label{
-padding-right:8em;
+.name-field label {
+  padding-right: 8em;
 }
 
-.desiredrole-field label{
-padding-right:5.1em;
+.email-field label {
+  padding-right: 8em;
 }
 
-.uploadresume-field label{
-    padding-right:3.8em;
+.desiredrole-field label {
+  padding-right: 5.1em;
 }
 
-.uploadresume-field{
-    display:inline-flex;
-    justify-content:space-between;
+.uploadresume-field label {
+  padding-right: 3.8em;
 }
 
-.browse{
-padding-left:20px;
-margin-top: 6px;
-margin-bottom: 16px;
-color:black;
+.uploadresume-field {
+  display: inline-flex;
+  justify-content: space-between;
 }
 
-.browse input{
-    padding-bottom:10px;
-    padding-top:10px;
-    padding-right:4em;
-    padding-left:25px;
-    border: 1px solid #ccc;
-    color:black;
+.browse {
+  padding-left: 20px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  color: black;
 }
 
-.browse input{
-       background-color: #EEEEEE;
-       font-weight:bold;
-       padding-bottom:14px;
+.browse input {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 4em;
+  padding-left: 25px;
+  border: 1px solid #ccc;
+  color: black;
 }
 
-input[type=submit] {
-    background-color: #EEEEEE;
-    color:black;
-    padding: 12px 20px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-  }
+.browse input {
+  background-color: #eeeeee;
+  font-weight: bold;
+  padding-bottom: 14px;
+}
 
-.submit{
-    padding-left:10.5em;
-  }
+input[type="submit"] {
+  background-color: #eeeeee;
+  color: black;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
 
-  .submit button{
-    border: 1px solid #ccc;
-    padding-top:5px;
-    padding-bottom:5px;
-    padding-right:5em;
-    padding-left:15px;
-    margin-left:5px;
-  }
+.submit {
+  padding-left: 10.5em;
+}
 
-
-
-
-
-
+.submit button {
+  border: 1px solid #ccc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5em;
+  padding-left: 15px;
+  margin-left: 5px;
+}
