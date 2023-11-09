@@ -14,13 +14,11 @@ function femaleradiobutton() {
   alert("Hello Lady");
 }
 
-
-
 //text-field required message
 function handleInput(inputId, errorMessage) {
   var input = document.getElementById(inputId);
   var error = document.getElementById(inputId + "-error");
-  
+
   if (errorMessage) {
     error.textContent = errorMessage;
   } else {
@@ -67,16 +65,13 @@ function validateForm() {
 }
 
 //validate Email Address
-function validateEmail(emailField){
+function validateEmail(emailField) {
   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-  if (reg.test(emailField.value) == false) 
-  {
-      alert('Invalid Email Address');
-      return false;
+  if (reg.test(emailField.value) == false) {
+    alert("Invalid Email Address");
+    return false;
   }
 
   return true;
-
 }
-

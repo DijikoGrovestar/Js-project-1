@@ -32,15 +32,13 @@ body {
   color: #ffffff;
 }
 
-
 .list-items ul li {
   background-color: #333333;
   color: #ffffff;
   cursor: pointer;
-  border-left: 4px solid transparent; 
+  border-left: 4px solid transparent;
   padding: 8px 10px;
 }
-
 
 .list-items ul li:hover {
   background-color: #ff9900;
@@ -49,8 +47,7 @@ body {
   border-left: 4px solid #ffffff;
 }
 
-
-.list-items .active { 
+.list-items .active {
   color: #333333;
   background-color: #ff9900;
   cursor: pointer;
