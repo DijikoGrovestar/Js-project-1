@@ -47,7 +47,7 @@ body {
   border-left: 4px solid #ffffff;
 }
 
-.list-items a.active { 
+.list-items .active { 
   color: #333333;
   background-color: #ff9900;
   cursor: pointer;
