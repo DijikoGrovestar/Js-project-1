@@ -14,186 +14,19 @@ function femaleradiobutton() {
   alert("Hello Lady");
 }
 
+
+
 //text-field required message
-function namefield(input) {
-  var nameError = document.getElementById("name-error");
-  if (input.value === "") {
-    input.classList.add("invalid");
-    nameError.classList.remove("hidden");
-    } else {
-      input.classList.remove("invalid");
-  }
-}
-
-function clearError(input) {
-  var nameError = document.getElementById("name-error");
-  if (input.value !== "") {
-      nameError.classList.add("hidden");
-  }
-}
-
-
-
-function emailfield() {
-  var nameInput = document.getElementById("email");
-  var nameError = document.getElementById("email-error");
-
-  if (nameInput.value === "") {
-    nameInput.classList.add("invalid");
-    nameError.classList.remove("hidden");
-   
-  } else {
-    nameInput.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function clearError(input) {
-  var nameError = document.getElementById("email-error");
-
-  if (input.value !== "") {
-    input.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function telephonefield() {
-  var nameInput = document.getElementById("telephonenumber");
-  var nameError = document.getElementById("telephone-error");
-
-  if (nameInput.value === "") {
-    nameInput.classList.add("invalid");
-    nameError.classList.remove("hidden");
+function handleInput(inputId, errorMessage) {
+  var input = document.getElementById(inputId);
+  var error = document.getElementById(inputId + "-error");
   
+  if (errorMessage) {
+    error.textContent = errorMessage;
   } else {
-    nameInput.classList.remove("invalid");
-    nameError.classList.add("hidden");
+    error.textContent = "";
   }
 }
-
-function clearError(input) {
-  var nameError = document.getElementById("telephone-error");
-
-  if (input.value !== "") {
-    input.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function organizationfield() {
-  var nameInput = document.getElementById("Organization");
-  var nameError = document.getElementById("organization-error");
-
-  if (nameInput.value === "") {
-    nameInput.classList.add("invalid");
-    nameError.classList.remove("hidden");
-  } else {
-    nameInput.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function clearError(input) {
-  var nameError = document.getElementById("organization-error");
-
-  if (input.value !== "") {
-    input.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function cityfield() {
-  var nameInput = document.getElementById("city");
-  var nameError = document.getElementById("city-error");
-
-  if (nameInput.value === "") {
-    nameInput.classList.add("invalid");
-    nameError.classList.remove("hidden");
-  
-  } else {
-    nameInput.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-
-function clearError(input) {
-  var nameError = document.getElementById("city-error");
-
-  if (input.value !== "") {
-    input.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function webaddressfield() {
-  var nameInput = document.getElementById("webaddress");
-  var nameError = document.getElementById("webaddress-error");
-
-  if (nameInput.value === "") {
-    nameInput.classList.add("invalid");
-    nameError.classList.remove("hidden");
-  } else {
-    nameInput.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function clearError(input) {
-  var nameError = document.getElementById("webaddress-error");
-
-  if (input.value !== "") {
-    input.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function feedbackfield() {
-  var nameInput = document.getElementById("feedback");
-  var nameError = document.getElementById("feedback-error");
-
-  if (nameInput.value === "") {
-    nameInput.classList.add("invalid");
-    nameError.classList.remove("hidden");
-  } else {
-    nameInput.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function clearError(input) {
-  var nameError = document.getElementById("feedback-error");
-
-  if (input.value !== "") {
-    input.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function enquiryfield() {
-  var nameInput = document.getElementById("enquiry");
-  var nameError = document.getElementById("enquiry-error");
-
-  if (nameInput.value === "") {
-    nameInput.classList.add("invalid");
-    nameError.classList.remove("hidden");
-  } else {
-    nameInput.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-function clearError(input) {
-  var nameError = document.getElementById("enquiry-error");
-
-  if (input.value !== "") {
-    input.classList.remove("invalid");
-    nameError.classList.add("hidden");
-  }
-}
-
-
-
 
 //state-dropdown
 function updatePromoCode() {
@@ -232,6 +65,7 @@ function validateForm() {
     document.getElementById("myForm").submit();
   }
 }
+
 
 
 // function showAlert(radioButton) {

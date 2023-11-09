@@ -23,8 +23,8 @@
       <ul>
         <li><a href="#">HOME</a></li>
         <li><a href="#">SERVICES</a></li>
-        <li><a href="careers.html">CAREERS</a></li>
-        <li><a class="nav-listitem active" href="#">CONTACT</a></li>
+        <li><a  href="careers.html">CAREERS</a></li>
+        <li><a class="active" href="#">CONTACT</a></li>
         <div class="logo-section">
           <div class="logo">
             <img src="assets\blog-icon.png">
@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <form id="myForm">
+  <form id="myForm" >
 
     <div id="error-message" class="error-message"></div>
     <div class="form-fields">
@@ -42,8 +42,8 @@
         <label for="name">My Name:</label>
       </div>
       <div class="text-field required">
-        <input type="text" onfocus="namefield(this)" onblur="clearError(this)" id="name" name="name">
-        <span id="name-error" class="req-msg hidden">Name is required</span>
+        <input type="text" onfocus="handleInput('name', 'Name is required')" onblur="handleInput('name')"  id="name" name="name">
+        <span id="name-error" class="req-msg "></span>
       </div>
     </div>
 
@@ -52,38 +52,42 @@
         <label for="email">My Email Address:</label>
       </div>
       <div class="text-field required">
-        <input type="text" onfocus="emailfield(this)"   onblur="clearError(this)" id="email" name="email">
-        <span id="email-error" class="req-msg hidden">Email is required</span>
+        <input type="text" onfocus="handleInput('email', 'Email is required')" onblur="handleInput('email')" id="email" name="email">
+        <span id="email-error" class="req-msg "></span>
       </div>
     </div>
+
 
     <div class="form-fields">
       <div class="label-field">
         <label for="telephonenumber">My Telephone Number:</label>
       </div>
-      <div class="text-field ">
-        <input type="text" onfocus="telephonefield(this)" onblur="clearError(this)" id="telephonenumber" name="telephonenumber">
-        <span id="telephone-error" class="req-msg hidden">Please enter telephone number</span>
+      <div class="text-field">
+        <input type="text"  onfocus="handleInput('telephonenumber', 'Please enter telephone number')" onblur="handleInput('telephonenumber')" id="telephonenumber" name="telephonenumber">
+        <span id="telephonenumber-error" class="req-msg"></span>
       </div>
     </div>
 
     <div class="form-fields">
       <div class="label-field">
-        <label for="Organization">My Organization Name:</label>
+        <label for="organization">My Organization Name:</label>
       </div>
       <div class="text-field required">
-        <input type="text" onfocus="organizationfield(this)" onblur="clearError(this)" id="Organization" name="Organization">
-        <span id="organization-error" class="req-msg hidden">Organization is required</span>
+        <input type="text" onfocus="handleInput('organization', 'Organization is required')" onblur="handleInput('organization')"  id="organization" name="organization">
+        <span id="organization-error" class="req-msg "></span>
       </div>
     </div>
+
+    
+
 
     <div class="form-fields">
       <div class="label-field">
         <label for="city">My City:</label>
       </div>
       <div class="text-field">
-        <input type="text" onfocus="cityfield(this)" onblur="clearError(this)" id="city" name="city">
-        <span id="city-error" class="req-msg hidden">Please enter city</span>
+        <input type="text"  onfocus="handleInput('city', 'Please enter city')" onblur="handleInput('city')" id="city" name="city">
+        <span id="city-error" class="req-msg"></span>
       </div>
     </div>
 
@@ -101,6 +105,7 @@
         </select>
       </div>
     </div>
+
 
     <div class="form-fields">
       <div class="label-field">
@@ -123,7 +128,7 @@
         <input type="radio" id="male" onchange="maleradiobutton()" name="gender" value="Male">
         <label for="male">Male</label>
         <br>
-        <input type="radio" id="female" onchange="femaleradiobutton  ()" name="gender" value="Female">
+        <input type="radio" id="female" onchange="femaleradiobutton()" name="gender" value="Female">
         <label for="female">Female</label>
       </div>
     </div>
@@ -147,8 +152,8 @@
         <label for="webaddress">My Website Address is:</label>
       </div>
       <div class="text-field">
-        <input type="text" onfocus="webaddressfield(this)" onblur="clearError(this)" id="webaddress" name="webaddress">
-        <span id="webaddress-error" class="req-msg hidden">Please enter website address</span>
+        <input type="text"   onfocus="handleInput('webaddress', 'Please enter website address')" onblur="handleInput('webaddress')" id="webaddress" name="webaddress">
+        <span id="webaddress-error" class="req-msg "></span>
       </div>
     </div>
 
@@ -157,8 +162,9 @@
     </div>
 
     <div class="aboutorg-textfield">
-      <textarea onclick="feedbackfield(this)" onblur="clearError(this)" id="feedback" name="feedback" rows="6" cols="47"></textarea>
-      <span id="feedback-error" class="req-msg hidden">Please fill this field</span>
+      <textarea onfocus="handleInput('feedback', 'Please fill this field')" onblur="handleInput('feedback')"  id="feedback" name="feedback" rows="6"
+        cols="47"></textarea>
+      <span id="feedback-error" class="req-msg"></span>
     </div>
 
     <div class="enquiry">
@@ -166,8 +172,9 @@
     </div>
 
     <div class="enquiry-textfield">
-      <textarea onfocus="enquiryfield(this)" onblur="clearError(this)" id="enquiry" name="enquiry" rows="6" cols="47"></textarea>
-      <span id="enquiry-error" class="req-msg hidden">Please fill this field</span>
+      <textarea onfocus="handleInput('enquiry', 'Please fill this field')" onblur="handleInput('enquiry')"  id="enquiry" name="enquiry" rows="6"
+        cols="47"></textarea>
+      <span id="enquiry-error" class="req-msg"></span>
     </div>
 
     <div class="buttons">

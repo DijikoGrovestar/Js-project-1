@@ -31,12 +31,20 @@ body {
   color: #ffffff;
 }
 
-.list-items a.nav-listitem:hover {
-  color: #333333;
+.list-items ul li{
+  background-color: #333333; /* Set a fixed background color */
+  color: #ffffff;
+  cursor: pointer;
+  border-left: 4px solid transparent; /* Maintain a constant border width */
+  padding: 8px 10px; /* Set fixed padding for top/bottom and left/right */
+
+}
+
+.list-items ul li:hover {
   background-color: #ff9900;
+  color: #333333;
   cursor: pointer;
   border-left: 4px solid #ffffff;
-  padding: 8px 10px;
 }
 
 .list-items a.active { 
@@ -45,23 +53,6 @@ body {
   cursor: pointer;
   border-left: 4px solid #ffffff;
   padding: 8px 10px;
-}
-
-
-.list-items ul li {
-  background-color: #333333; /* Set a fixed background color */
-  color: #ffffff;
-  cursor: pointer;
-  border-left: 4px solid transparent; /* Maintain a constant border width */
-  padding: 8px 10px; /* Set fixed padding for top/bottom and left/right */
-  justify-content: space-between;
-}
-
-.list-items ul li:hover {
-  background-color: #ff9900;
-  color: #333333;
-  cursor: pointer;
-  border-left: 4px solid #ffffff;
 }
 
 .list-items a {
@@ -73,6 +64,8 @@ body {
   color: black;
 }
 
+
+
 .logo-section {
   display: flex;
   justify-content: space-between;
@@ -83,7 +76,7 @@ body {
 
 .logo-section .logo img {
   width: 25px;
-  margin: 0 61em;
+  margin: 0 66em;
   padding-top: 2px;
 }
 
@@ -91,12 +84,12 @@ body {
   content: "*";
   color: red;
 }
-
+/* 
 .req-msg {
   display: none;
   color: red;
   font-size: 12px;
-}
+} */
 
 .error-message {
   color: red;
