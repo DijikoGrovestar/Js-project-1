@@ -52,7 +52,7 @@
         <label for="email">My Email Address:</label>
       </div>
       <div class="text-field required">
-        <input type="text" onfocus="handleInput('email', 'Email is required')" onblur="handleInput('email')" id="email" name="email">
+        <input type="text" onblur="validateEmail(this);"  >
         <span id="email-error" class="req-msg "></span>
       </div>
     </div>
