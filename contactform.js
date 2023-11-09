@@ -68,19 +68,4 @@ function validateForm() {
 
 
 
-// function showAlert(radioButton) {
-//   if (radioButton.checked) {
-//      alert("You clicked: " + radioButton.value);
-//                }         }
 
-//.......
-// function alertmessage() {
-//   let gender = document.getElementsByName("gender");
-//   for (let i = 0; i < gender.length; i++) {
-//     if (gender[i].checked && gender[i].value == "male") {
-//       alert("Hello Sir");
-//     } else if (gender[i].checked && gender[i].value == "female") {
-//       alert("Hello Lady");
-//     }
-//   }
-// }
